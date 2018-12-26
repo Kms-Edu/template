@@ -1,0 +1,7 @@
+.next
+node_modules
+package-lock.json
+renovate.json
+.gitignore
+locales/_build
+__tests__

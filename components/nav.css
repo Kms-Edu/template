@@ -1,0 +1,7 @@
+.wrapper {
+    @apply flex items-center justify-between flex-wrap bg-teal p-6;
+}
+
+.icon {
+    @apply fill-current h-8 w-8 mr-2;
+}

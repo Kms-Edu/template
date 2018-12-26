@@ -1,0 +1,5 @@
+{
+   "localeDir": "./locales/",
+   "srcPathDirs": ["./pages", "./components"],
+   "format": "po"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "demo",
+  "version": 2,
+  "alias": ["web.ihs.edu.vn"],
+  "routes": [	
+    {	
+      "src": "^/service-worker.js$",	
+      "dest": "/_next/static/service-worker.js",
+      "headers": {
+        "cache-control": "public, max-age=43200, immutable",
+        "Service-Worker-Allowed": "/"
+      }
+    },
+    {
+      "src": "/_next/(.*)",
+      "headers": {
+        "cache-control": "max-age=31536000"
+      },
+      "dest": "/_next/$1"
+    }
+  ],
+  "builds": [
+    {
+      "src": "next.config.js",
+      "use": "@now/next"
+    }
+  ],
+  "env": {
+    "WWW_HOME_PREFIX": ""
+  }
+}
